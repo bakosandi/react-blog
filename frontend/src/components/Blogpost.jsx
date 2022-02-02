@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Article = styled.article`
   background-color: pink;
@@ -37,7 +38,9 @@ const Blogpost = (props) => {
         <Author>{props.author}</Author>
       </Header>
       <Body>{props.body}</Body>
-      <Button>Edit</Button>
+      <Link to={"/edit/" + props.id}>
+        <Button>Edit</Button>
+      </Link>
     </Article>
   );
 };

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import useAsync from "../hooks/useAsync";
 import Blogpost from "./Blogpost";
 
 const fetchBlogpost = async () => {
@@ -6,18 +6,6 @@ const fetchBlogpost = async () => {
   const response = await fetch(url);
   const posts = await response.json();
   return posts;
-};
-
-const useAsync = (fn) => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    fn().then((result) => {
-      setData(result);
-      setLoading(false);
-    });
-  }, [fn]);
-  return [data, loading];
 };
 
 const Bloglist = () => {
@@ -33,6 +21,7 @@ const Bloglist = () => {
           author={item.author}
           title={item.title}
           body={item.body}
+          id={item.id}
         />
       ))}
     </section>
