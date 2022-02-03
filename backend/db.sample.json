@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "id": 0,
+      "author": "Andi",
+      "body": "...Valamilyen szöveg",
+      "title": "Címsor"
+    },
+    {
+      "title": "",
+      "body": "",
+      "author": "",
+      "id": 1
+    },
+    {
+      "title": "hello",
+      "body": "valami",
+      "author": "Andi",
+      "id": 2
+    },
+    {
+      "title": "hello",
+      "body": "valami",
+      "author": "Andi",
+      "id": 3
+    },
+    {
+      "title": "András",
+      "body": "semmi",
+      "author": "Ferenc",
+      "id": 4
+    },
+    {
+      "title": "Valami Amerika",
+      "body": "I wear my sunglasses at night.\n",
+      "author": "Laci",
+      "id": 5
+    },
+    {
+      "title": "Hello world",
+      "body": "Márminálunk babám",
+      "author": "Janka",
+      "id": 6
+    },
+    {
+      "title": "Hollácska",
+      "body": "Nyuszikák",
+      "author": "Sári Mári ",
+      "id": 7
+    },
+    {
+      "title": "Láb",
+      "body": "Ne csak ülj ott!!",
+      "author": "Aranka",
+      "id": 8
+    }
+  ]
+}
